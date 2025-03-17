@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio 1 questão 15</title>
+    </head>
+
+    <body>
+        <h1>Desafio 1</h1>
+        <p>15. Refatore o código abaixo para que seja mais legível, usando boas práticas de nomenclatura e separando o código em funções:
+            <br><br>
+            x = 10
+            <br>
+            y = 20
+            <br>
+            z = x+y
+            <br><br>
+            console.log(z)
+        </p>
+
+        <p>A resposta referente está disponível no console.</p>
+    </body>
+
+    <script>
+
+        // Função para somar dois números
+        function somarNumeros(numero1, numero2) {
+        return numero1 + numero2;
+        }
+
+        // Função para exibir o resultado
+        function exibirResultado(resultado) {
+        console.log(`O resultado da soma é: ${resultado}`);
+        }
+
+        // Função principal que gerencia o fluxo
+        function calcularSoma() {
+        const numero1 = 10;
+        const numero2 = 20;
+        const resultado = somarNumeros(numero1, numero2);
+        exibirResultado(`A soma entre ${numero1} e ${numero2} é igual a ${resultado}`);
+        }
+
+        // Chama a função principal
+        calcularSoma();
+
+
+    </script>
+</html>
